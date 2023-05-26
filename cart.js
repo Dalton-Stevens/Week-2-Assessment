@@ -81,7 +81,22 @@ function calcFinalPrice(cartTotal, couponValue, tax) {
 
 /*
     TEXT ANSWER HERE
-
+    The first property in the customer object should be a name. 
+        The restaurant should know the customer's name so they can connect with them and know who they are serving.
+        The data type will be a string.
+        It's only one customer so it should be a string.
+    The second property will be the customer's age.
+        If they are serving alcohol they will need to make sure the customer is old enough to order it.
+        The data type will be a number.
+        Age is number.
+    The third property will be the order.
+        The restaurant needs to know what the customer wants to eat and drink.
+        The data type will be an array.
+        If the customer wants to order multiple things it should be in an array.
+    The fourth property will be if the customer is satisfied.
+        The restaurant wants to know how their service and food is so they want to know if the customer is satisfied.
+        The data type will be a boolean.
+        The customer is either satisfied or not so it needs to be a boolean.
 */
 
 /*
@@ -90,3 +105,11 @@ function calcFinalPrice(cartTotal, couponValue, tax) {
 */
 
 //CODE HERE
+const customer = {
+    name: `Bill`,
+    age: 40,
+    order: [`tacos`, `sandwich`, `fries`, `water`, `beer`],
+    isSatisfied: true 
+};
+
+console.log(customer);
